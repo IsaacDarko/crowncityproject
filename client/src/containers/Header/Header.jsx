@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import images from '../../constants/images';
 
 import './Header.scss';
 
@@ -15,7 +16,9 @@ const Header = () => {
     noon: {width: '33.33%'},
     dusk: {width: '33.33%'},
     small: {fontSize: '7.5rem'},
-    large: {fontSize: '15rem', fontWeight:'boldest'}
+    large: {fontSize: '15rem', fontWeight:'boldest'},
+    wind: {rotate: '30deg', scale:'1.3' },
+    unwind: {rotate: '0deg', scale:'1'}
   };
 
   return (
@@ -31,13 +34,18 @@ const Header = () => {
           initial={{width:"34%"}}
           variants={variants}
           animate={ expandedIndex === 1 ? 'expanded' : 'dawn' }
-          transition={{ type:"spring", bounce:0.4, duration: 1.5 }}
+          transition={{ type:"spring", bounce:0.3, duration: 1.2 }}
           >    
-              <motion.img src="../assets/nikedawns.png" alt="bluenikes" />            
+              <motion.img className='app__hoverimg-dawn' src={images.nikedawns} alt="bluenikes" 
+              variants={variants}
+              animate={ expandedIndex === 1 ? 'wind' : 'unwind'}
+              transition={{ duration: 0.2 }}
+              />
+
               <motion.h1 className='app__dawn-title'
               variants={variants}
               animate={ expandedIndex === 1 ? 'large' : 'small'}
-              transition={{ delay: 0.2 }} 
+              transition={{ delay: 0.15 }} 
               >NEW</motion.h1>
           </motion.div>
           
@@ -48,13 +56,18 @@ const Header = () => {
           onClick={() => setExpandedIndex(expandedIndex === 2 ? -1 : 2)}
           variants={variants}
           animate={ expandedIndex === 2 ? 'expanded' : 'noon'}
-          transition={{ type:"spring", bounce:0.4, duration: 1.5 }}
+          transition={{ type:"spring", bounce:0.4, duration: 1.2 }}
           >
-              <motion.img src="../assets/nikenoons.png" alt="whitenikes" />             
+              <motion.img className='app__hoverimg-noon' src={images.nikenoons} alt="whitenikes" 
+              variants={variants}
+              animate={ expandedIndex === 2 ? 'wind' : 'unwind'}
+              transition={{ duration: 0.2 }}
+              />
+
               <motion.h1 className='app__noon-title'
               variants={variants}
               animate={ expandedIndex === 2 ? 'large' : 'small'}
-              transition={{ delay: 0.2 }} 
+              transition={{ delay: 0.15 }} 
               >BOLD</motion.h1>
           </motion.div>
 
@@ -65,13 +78,18 @@ const Header = () => {
           onClick={() => setExpandedIndex(expandedIndex === 3 ? -1 : 3)}
           variants={variants}
           animate={ expandedIndex === 3 ? 'expanded' : 'dusk' }
-          transition={{ type:"spring", bounce:0.4, duration: 1.5 }}
+          transition={{ type:"spring", bounce:0.4, duration: 1.2 }}
           >
-              <motion.img src="../assets/nikedusks.png" alt="pinknikes" />             
+              <motion.img className='app__hoverimg-dusk' src={images.nikedusks} alt="pinknikes" 
+              variants={variants}
+              animate={ expandedIndex === 3 ? 'wind' : 'unwind'}
+              transition={{ duration: 0.2 }}
+              />
+
               <motion.h1 className='app__dusk-title'
               variants={variants}
               animate={ expandedIndex === 3 ? 'large' : 'small'}
-              transition={{ delay: 0.2 }}              
+              transition={{ delay: 0.15 }}              
               >FAST</motion.h1>
           </motion.div>  
 
