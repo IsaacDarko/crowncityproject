@@ -1,0 +1,73 @@
+.app__header{
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    overflow: hidden;
+    background-color: var(--dusk-pink);
+}
+
+.app__header-blue{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+    flex-direction: column;
+    width: 34%;
+    background-color: var(--dawn-blue);
+    color: white;
+    z-index: 3;
+    overflow: hidden;
+}
+
+/*default styling for noon div*/
+.app__header-white{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+    flex-direction: column;
+    width: 32%;
+    background-color: var(--noon-white);
+    color: black;
+    z-index: 3;
+    overflow: hidden;
+}
+
+/*default styling for dusk div*/
+.app__header-pink{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+    flex-direction: column;
+    width: 34%;
+    background-color: var(--dusk-pink);
+    color: white;
+    z-index: 3;
+    overflow: hidden;
+}
+
+
+.app__dawn-title{
+    z-index:-2;
+    font-size:120px;
+    font-weight:900;
+    font-style: italic;
+    color:white;
+}
+
+.app__noon-title{
+    z-index:-2;
+    font-size:120px;
+    font-weight:bolder;
+    font-style: italic;
+    color:black;
+}
+
+
+.app__dusk-title{
+    z-index:-2;
+    font-size:120px;
+    font-weight:900;
+    font-style: italic;
+    color:white;
+}

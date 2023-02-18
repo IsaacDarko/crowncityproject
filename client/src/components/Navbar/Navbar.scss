@@ -1,0 +1,56 @@
+.app__navbar {
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 4rem 8rem;
+    color: #000;
+    position: absolute;
+    z-index: 5;
+
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.app__site-logo{
+    width: 80px;
+    height: 29px;
+}
+
+.app__navbar-menu {  
+    width: 40%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 5rem;
+    padding: 0rem 23rem;
+
+    li {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0 1rem;
+        cursor: pointer;
+    }
+}
+
+.app__navbar-icons{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
+   margin: 0rem 1rem;
+}
+
+
