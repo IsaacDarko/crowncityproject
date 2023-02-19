@@ -11,14 +11,14 @@ const Header = () => {
 
 
   const variants = {
-    expanded: { width: '100%' },
-    dawn: {width: '33.33%'},
-    noon: {width: '33.33%'},
-    dusk: {width: '33.33%'},
+    expanded: { width: '120%', zIndex:'3' },
+    dawn: {width: '33.33%', zIndex:'0'},
+    noon: {width: '33.33%', zIndex:'1'},
+    dusk: {width: '33.33%', zIndex:'2'},
     small: {fontSize: '7.5rem'},
     large: {fontSize: '15rem', fontWeight:'boldest'},
-    wind: {rotate: '30deg', scale:'1.05' },
-    unwind: {rotate: '0deg', scale:'0.82'}
+    wind: {rotate: '30deg', scale:'1.05'},
+    unwind: {rotate: '0deg', scale:'0.85'}
   };
 
   return (
