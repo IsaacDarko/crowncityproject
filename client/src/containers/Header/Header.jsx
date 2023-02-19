@@ -18,7 +18,7 @@ const Header = () => {
     small: {fontSize: '7.5rem'},
     large: {fontSize: '15rem', fontWeight:'boldest'},
     wind: {rotate: '30deg', scale:'1.05' },
-    unwind: {rotate: '0deg', scale:'0.85'}
+    unwind: {rotate: '0deg', scale:'0.82'}
   };
 
   return (
@@ -38,7 +38,7 @@ const Header = () => {
               <motion.img className='app__hoverimg-dawn' src={images.nikedawns} alt="bluenikes" 
               variants={variants}
               animate={ expandedIndex === 1 ? 'wind' : 'unwind'}
-              transition={{ delay:0.05, duration: 0.2 }}
+              transition={{ delay:0.01, duration: 0.2 }}
               />
 
               <motion.h1 className='app__dawn-title'

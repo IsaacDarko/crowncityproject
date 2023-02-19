@@ -13,8 +13,8 @@
 
 
     img{
-        width: 10px;
-        height: 13px;
+        width: 9px;
+        height: 12px;
         margin-bottom: 1.6rem;
         margin-left: 5px;
 
@@ -25,9 +25,10 @@
 
     h2{
         padding-left: 1rem;
-        font-size: 30px;
+        font-size: 32px;
         font-weight: 500;
-        width: 90%;
+        text-align: start;
+        width: 87%;
     }
 }
 
@@ -36,6 +37,7 @@
     padding: 0rem 5rem;
     font-size: 30px;
     font-weight:lighter;
+    text-align: left;
 }
 
 .prev{

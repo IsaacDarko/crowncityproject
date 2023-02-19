@@ -36,12 +36,14 @@
 
 
 .app__midsection-shop-gender{
-    width: 9rem;
+
     height: 4rem;
     border-radius: 2rem;
+    border-width: 0;
     background-color: black;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     margin: 0rem 1rem;
+    padding: 0rem 1rem;
 }
