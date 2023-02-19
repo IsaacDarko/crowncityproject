@@ -31,7 +31,11 @@
 
 
 .app__midsection-buttons{
-
+    button{
+        &:hover{
+            cursor: pointer;
+        }
+    }
 }
 
 
@@ -42,8 +46,8 @@
     border-width: 0;
     background-color: black;
     color: white;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 590;
     margin: 0rem 1rem;
-    padding: 0rem 1rem;
+    padding: 0rem 1.5rem;
 }
