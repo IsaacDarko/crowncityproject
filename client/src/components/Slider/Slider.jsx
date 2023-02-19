@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import data from '../../constants/data';
 import images from '../../constants/images';
 
 import './Slider.scss';
 
 const Slider = () => {
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);    
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);   
+    const [popularProducts, setPopularProducts] = useState([...data]) 
     const { slide01, slide02, slide03, slide04, slide05, slide06, slide07 } = images;
     const sliderImgs = [slide01, slide02, slide03, slide04, slide05, slide06, slide07]
 
@@ -50,11 +52,11 @@ const Slider = () => {
             </div>
 
             <div className="slide">
-                <div className="slider-container" >
+              <div className="slider-container" >
 
                 <AnimatePresence >
-
                     {imagesToDisplay.map((image) => (
+                      <div>
                         <motion.img className='slide'
                             key={image.index}
                             src={sliderImgs[image.index]}
@@ -63,18 +65,20 @@ const Slider = () => {
                             exit={{ opacity: 1 }}
                             transition={{ duration: 1 }}
                         />
-                    ))}
-                    <div>
 
-                    </div>
-                    <p></p>
-
+                        <div className='details'>
+                            <div className='product-deets'>
+                              <h1 className='product-name'>{popularProducts[image.index].name}</h1>
+                              <h1 className='product-price'>{popularProducts[image.index].price}</h1>
+                            </div>
+                            <p className='category'>{popularProducts[image.index].category}</p>
+                        </div>
+                      </div>  
+                    ))}                    
                 </AnimatePresence>
-                    
-                </div>
-            </div>
 
-            
+              </div>
+            </div>       
           
         </div>
       );
