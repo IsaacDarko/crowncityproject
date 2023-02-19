@@ -1,0 +1,35 @@
+.app__mid-bottom{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 2rem 5rem;
+    margin: 5rem 0rem;
+
+    h1{
+        padding: 2rem 1rem;
+        font-size: 35px;
+        font-weight: light;
+    }
+}
+
+
+.app__mid-bottom-categories{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+
+    img{
+        width: 32rem;
+        height: 30rem;
+    }
+}
+
+.cat-imgs{
+    padding: 0rem 1rem;
+}
+
+.label{
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: lighter;
+}

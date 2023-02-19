@@ -1,0 +1,47 @@
+.app__midsection{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.app__midsection-texts{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0.5rem;
+    width: 37%;
+
+
+    h1{
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    p{
+        font-size: 20px;
+        font-weight: lighter;
+        text-align: center;
+    }
+}
+
+
+.app__midsection-buttons{
+
+}
+
+
+.app__midsection-shop-gender{
+    width: 9rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0rem 1rem;
+}

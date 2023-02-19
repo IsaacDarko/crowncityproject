@@ -10,7 +10,7 @@ import topshopimg from '../assets/rect1.jpg';
 import slide01 from '../assets/rect2.jpg';
 import slide02 from '../assets/rect3.jpg';
 import slide03 from '../assets/rect4.jpg';
-import slide04 from '../assets/fullrect9.png';
+import slide04 from '../assets/fullrect9.jpg';
 import slide05 from '../assets/rect5.jpg';
 import slide06 from '../assets/rect6.jpg';
 import slide07 from '../assets/rect7.jpg';
@@ -18,7 +18,10 @@ import slide07 from '../assets/rect7.jpg';
 import footerlogo from '../assets/svgs/talogo.png';
 import twitterlogo from '../assets/svgs/twitter.png';
 import youtubelogo from '../assets/svgs/youtube.png';
-import instagramlogo from '../assets/svgs/insta.png'
+import instagramlogo from '../assets/svgs/insta.png';
+import back from '../assets/svgs/bkwrdbtn.png';
+import forward from '../assets/svgs/fwrdbtn.png';
+import buffer from '../assets/svgs/buffer.png';
 
 export default {
     airjordan,
@@ -40,5 +43,8 @@ export default {
     footerlogo,
     twitterlogo,
     youtubelogo,
-    instagramlogo
+    instagramlogo,
+    back,
+    forward,
+    buffer
 }

@@ -1,11 +1,14 @@
 import React from 'react';
+import { Slider } from '../../components'
+
+
 import './MidTop.scss';
 
 const MidTop = () => {
   return (
-    <div>
-        <h1>MidTop</h1>
-    </div>
+    
+    <Slider />
+
   )
 }
 

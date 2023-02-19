@@ -2,6 +2,7 @@
     background-color: var(--primary-color);
     width: 100%;
     height: 30rem;
+    margin-bottom: 0;
 
     a{
         color: #858585;
@@ -131,7 +132,6 @@
 
 .app__footer-base{
     width: 100%;
-    height: 75%;
     display: flex;
     flex: 1;
     flex-direction: row;
@@ -149,7 +149,8 @@
     flex: 1;
     flex-direction: row;
     justify-content: flex-end;   
-    
+    padding-right: 3rem;
+
     li{
         padding: 2rem 1rem;
     }

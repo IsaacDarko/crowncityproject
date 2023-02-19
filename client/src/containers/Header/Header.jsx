@@ -11,7 +11,7 @@ const Header = () => {
 
 
   const variants = {
-    expanded: { width: '100%' },
+    expanded: { width: '70%' },
     dawn: {width: '33.33%'},
     noon: {width: '33.33%'},
     dusk: {width: '33.33%'},
@@ -31,7 +31,6 @@ const Header = () => {
           layout
           key="1"
           onClick={() => setExpandedIndex(expandedIndex === 1 ? -1 : 1)}
-          initial={{width:"34%"}}
           variants={variants}
           animate={ expandedIndex === 1 ? 'expanded' : 'dawn' }
           transition={{ type:"spring", bounce:0.3, duration: 1.2 }}
@@ -39,13 +38,13 @@ const Header = () => {
               <motion.img className='app__hoverimg-dawn' src={images.nikedawns} alt="bluenikes" 
               variants={variants}
               animate={ expandedIndex === 1 ? 'wind' : 'unwind'}
-              transition={{ duration: 0.2 }}
+              transition={{ delay:0.05, duration: 0.2 }}
               />
 
               <motion.h1 className='app__dawn-title'
               variants={variants}
               animate={ expandedIndex === 1 ? 'large' : 'small'}
-              transition={{ delay: 0.15 }} 
+              transition={{ delay: 0.1 }} 
               >NEW</motion.h1>
           </motion.div>
           
@@ -56,18 +55,18 @@ const Header = () => {
           onClick={() => setExpandedIndex(expandedIndex === 2 ? -1 : 2)}
           variants={variants}
           animate={ expandedIndex === 2 ? 'expanded' : 'noon'}
-          transition={{ type:"spring", bounce:0.4, duration: 1.2 }}
+          transition={{ type:"spring", bounce:0.3, duration: 1.2 }}
           >
               <motion.img className='app__hoverimg-noon' src={images.nikenoons} alt="whitenikes" 
               variants={variants}
               animate={ expandedIndex === 2 ? 'wind' : 'unwind'}
-              transition={{ duration: 0.2 }}
+              transition={{ delay:0.05, duration: 0.2 }}
               />
 
               <motion.h1 className='app__noon-title'
               variants={variants}
               animate={ expandedIndex === 2 ? 'large' : 'small'}
-              transition={{ delay: 0.15 }} 
+              transition={{ delay: 0.1 }} 
               >BOLD</motion.h1>
           </motion.div>
 
@@ -78,18 +77,18 @@ const Header = () => {
           onClick={() => setExpandedIndex(expandedIndex === 3 ? -1 : 3)}
           variants={variants}
           animate={ expandedIndex === 3 ? 'expanded' : 'dusk' }
-          transition={{ type:"spring", bounce:0.4, duration: 1.2 }}
+          transition={{ type:"spring", bounce:0.3, duration: 1.2 }}
           >
               <motion.img className='app__hoverimg-dusk' src={images.nikedusks} alt="pinknikes" 
               variants={variants}
               animate={ expandedIndex === 3 ? 'wind' : 'unwind'}
-              transition={{ duration: 0.2 }}
+              transition={{ delay:0.05, duration: 0.2 }}
               />
 
               <motion.h1 className='app__dusk-title'
               variants={variants}
               animate={ expandedIndex === 3 ? 'large' : 'small'}
-              transition={{ delay: 0.15 }}              
+              transition={{ delay: 0.1 }}              
               >FAST</motion.h1>
           </motion.div>  
 
