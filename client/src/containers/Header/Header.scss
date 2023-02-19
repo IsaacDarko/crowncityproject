@@ -77,7 +77,7 @@
     width: 442px;
     height: 539px;
     margin: 1rem 0rem;
-    overflow: hidden;
+    filter: drop-shadow()
  }
 
  .app__hoverimg-noon {
@@ -85,6 +85,8 @@
     width: 448px;
     height: 900px;
     overflow: hidden;
+    filter: drop-shadow(2.1em 2.1em 1em rgba(0,0,0,0.3))
+
  }
 
  .app__hoverimg-dusk {
@@ -92,5 +94,5 @@
     z-index: 3;
     width: 456px;
     height: 730px;
-    overflow: hidden;
+    filter: drop-shadow(2.1em 2.1em 1em rgba(0,0,0,0.3))
  }
