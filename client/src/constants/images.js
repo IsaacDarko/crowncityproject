@@ -23,6 +23,10 @@ import back from '../assets/svgs/bkwrdbtn.png';
 import forward from '../assets/svgs/fwrdbtn.png';
 import buffer from '../assets/svgs/buffer.png';
 
+import sitelogo from '../assets/svgs/sitelogo.png';
+import favourite from '../assets/svgs/heart.png';
+import cart from '../assets/svgs/cart.png';
+
 export default {
     airjordan,
     hoodiegirl,
@@ -46,5 +50,8 @@ export default {
     instagramlogo,
     back,
     forward,
-    buffer
+    buffer,
+    sitelogo,
+    favourite,
+    cart
 }

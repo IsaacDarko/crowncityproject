@@ -1,4 +1,6 @@
 import React from 'react';
+import images from '../../constants/images'
+
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -6,7 +8,7 @@ const Navbar = () => {
     <div className="app__navbar">
 
             <div className='app__navbar-logo'>
-                <img className="app__site-logo" src="../assets/svgs/sitelogo.png" alt='logo' />
+                <img className="app__site-logo" src={images.sitelogo} alt='logo' />
             </div>
 
             <ul className='app__navbar-menu'>
@@ -18,8 +20,8 @@ const Navbar = () => {
             </ul>
 
             <div className='navbar-icons'> 
-                <a href="#"><img className="icons" src="../assets/svgs/heart.png" alt="favourite" /></a>
-                <a href="#"><img className="icons" src="../assets/svgs/cart.png" alt="cart" /></a>
+                <a href="#"><img className="icons" src={images.favourite} alt="favourite" /></a>
+                <a href="#"><img className="icons" src={images.cart} alt="cart" /></a>
             </div>
         
     </div>
