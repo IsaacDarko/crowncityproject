@@ -38,7 +38,7 @@ const Header = () => {
               <motion.img className='app__hoverimg-dawn' src={images.nikedawns} alt="bluenikes" 
               variants={variants}
               animate={ expandedIndex === 1 ? 'wind' : 'unwind'}
-              transition={{ delay:0.01, duration: 0.2 }}
+              transition={{ delay:0.1, duration: 0.2 }}
               />
 
               <motion.h1 className='app__dawn-title'
@@ -60,7 +60,7 @@ const Header = () => {
               <motion.img className='app__hoverimg-noon' src={images.nikenoons} alt="whitenikes" 
               variants={variants}
               animate={ expandedIndex === 2 ? 'wind' : 'unwind'}
-              transition={{ delay:0.05, duration: 0.2 }}
+              transition={{ delay:0.1, duration: 0.2 }}
               />
 
               <motion.h1 className='app__noon-title'
@@ -82,7 +82,7 @@ const Header = () => {
               <motion.img className='app__hoverimg-dusk' src={images.nikedusks} alt="pinknikes" 
               variants={variants}
               animate={ expandedIndex === 3 ? 'wind' : 'unwind'}
-              transition={{ delay:0.05, duration: 0.2 }}
+              transition={{ delay:0.1, duration: 0.2 }}
               />
 
               <motion.h1 className='app__dusk-title'

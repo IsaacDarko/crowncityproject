@@ -47,6 +47,10 @@
             cursor: pointer;
         }
     }
+
+    @media screen and (max-width: 1900px) {
+        width: 65%;
+    }
 }
 
 

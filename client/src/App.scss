@@ -9,7 +9,13 @@ body{
     padding: 0;
     margin: 0;
     width: 100vw;
-  }
+
+    @media screen and (min-width: 2000px) {
+      width: 90vw;
+    }
+
+}
+  
   
   .app__flex {
     display: flex;
