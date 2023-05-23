@@ -33,12 +33,12 @@ const Header = () => {
           onClick={() => setExpandedIndex(expandedIndex === 1 ? -1 : 1)}
           variants={variants}
           animate={ expandedIndex === 1 ? 'expanded' : 'dawn' }
-          transition={{ type:"spring", bounce:0.3, duration: 1.2 }}
+          transition={{ type:"spring", bounce:0.3, duration: 1.1 }}
           >    
               <motion.img className='app__hoverimg-dawn' src={images.nikedawns} alt="bluenikes" 
               variants={variants}
               animate={ expandedIndex === 1 ? 'wind' : 'unwind'}
-              transition={{ delay:0.1, duration: 0.2 }}
+              transition={{ delay:0.15, duration: 0.2 }}
               />
 
               <motion.h1 className='app__dawn-title'
@@ -55,12 +55,12 @@ const Header = () => {
           onClick={() => setExpandedIndex(expandedIndex === 2 ? -1 : 2)}
           variants={variants}
           animate={ expandedIndex === 2 ? 'expanded' : 'noon'}
-          transition={{ type:"spring", bounce:0.3, duration: 1.2 }}
+          transition={{ type:"spring", bounce:0.3, duration: 1.1 }}
           >
               <motion.img className='app__hoverimg-noon' src={images.nikenoons} alt="whitenikes" 
               variants={variants}
               animate={ expandedIndex === 2 ? 'wind' : 'unwind'}
-              transition={{ delay:0.1, duration: 0.2 }}
+              transition={{ delay:0.15, duration: 0.2 }}
               />
 
               <motion.h1 className='app__noon-title'
@@ -77,12 +77,12 @@ const Header = () => {
           onClick={() => setExpandedIndex(expandedIndex === 3 ? -1 : 3)}
           variants={variants}
           animate={ expandedIndex === 3 ? 'expanded' : 'dusk' }
-          transition={{ type:"spring", bounce:0.3, duration: 1.2 }}
+          transition={{ type:"spring", bounce:0.3, duration: 1.1 }}
           >
               <motion.img className='app__hoverimg-dusk' src={images.nikedusks} alt="pinknikes" 
               variants={variants}
               animate={ expandedIndex === 3 ? 'wind' : 'unwind'}
-              transition={{ delay:0.1, duration: 0.2 }}
+              transition={{ delay:0.15, duration: 0.2 }}
               />
 
               <motion.h1 className='app__dusk-title'

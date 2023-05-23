@@ -157,6 +157,7 @@
 .copyright {
     width: 79%;
     padding: 2rem 5rem;
+    font-size: 14px;
 }
 
 .last-menu {
@@ -164,7 +165,8 @@
     flex: 1;
     flex-direction: row;
     justify-content: flex-end;   
-    padding-right: 3rem;
+    padding-right: 1rem;
+    font-size: 14px;
 
     li{
         padding: 2rem 1rem;
